@@ -1,1 +1,147 @@
 # wloader
+Çin'den herhangi bir arka kapı yükleyicisi kullanmadan Windows 10 PRO Aktivatörü ve artık bir veya iki hafta boyunca geçerli olan herhangi bir crack'e ihtiyacınız olmayacak.
+
+## Bu komut dosyası cmd için yazılmıştır. Bu betik aynı zamanda tüm bloatware'leri Windows 10'dan kaldıracaktır. Betiği ihtiyaçlarınıza göre düzenleyin.
+Etkinleştirme kimliği, kurulum kimliği ve diğer ayrıntılar dahil olmak üzere daha ayrıntılı lisans bilgilerini görüntülemek için aşağıdaki komutu çalıştırın:
+## "slmgr.vbs /dlv"
+
+# Windows 11 PRO Yükleyiciyi çalıştırın:
+
+## "sc config LicenseManager start= auto & net start LicenseManager"
+## "sc config wuauserv start= auto & net start wuauserv"
+## "changepk.exe /productkey VK7JG-NPHTM-C97JM-9MPGT-3V66T"
+## "exit"
+
+# Aşağıya kopyalayıp yapıştırarak Windows 10/11'i PRO'ya yükseltin:
+
+## "slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX"
+## "slmgr /skms kms8.msguides.com"
+## "slmgr /ato"
+
+# Windows 10 Enterprise 10.0.19043'ü etkinleştirin N/A Build 19043, tam örnek
+
+## "slmgr.vbs /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4"
+## "slmgr /skms kms8.msguides.com"
+## "slmgr.vbs /ato"
+
+# Lisans Bitiş Tarihini Görüntüle
+
+## "slmgr.vbs /xpr"
+
+# Aktivasyon Anahtarını Kaldır
+
+## "slmgr.vbs /upk"
+
+# Ürün Anahtarını Kaldırma
+
+## "slmgr.vbs /cpky"
+
+# Lisans Anahtarınızı Belirleyin
+
+## "slmgr.vbs /ipk #####-#####-#####-#####-#####"
+
+# slmgrUzaktan Yapılandır
+
+## "slmgr.vbs computername username password /option"
+
+# Windows 10 Anahtarları
+
+## "Home:                TX9XD-98N7V-6WMQ6-BX7FG-H8Q99"
+## "Home N:              3KHY7-WNT83-DGQKR-F7HPR-844BM"
+## "Professional:        W269N-WFGWX-YVC9B-4J6C9-T83GX"
+## "rofessional N:      MH37W-N47XK-V7XM9-C7227-GCQG9"
+## "Education:           NW6C2-QMPVW-D7KKK-3GKT6-VCFB2"
+## "Education N:         2WH4N-8QGBV-H22JP-CT43Q-MDWWJ"
+## "Enterprise:          NPPR9-FWDCX-D2C8J-H872K-2YT43"
+## "Enterprise N:        DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4"
+## "Enterprise LSTB:     WNMTR-4C88C-JK8YV-HQ7T2-76DF9"
+## "Enterprise LSTB N:   2F77B-TNFGY-69QQF-B8YKP-D69TJ"
+
+# KMS Sunucuları
+## Anahtarları şununla ekle:
+
+## "slmgr /skms <server>"
+
+## Bazı Kullanılabilir Sunucular:
+
+## "kms.digiboy.ir"
+## "kms.cangshui.net"
+## "hq1.chinancce.com"
+## "54.223.212.31"
+## "kms.cnlic.com"
+## "kms.chinancce.com"
+## "kms.ddns.net"
+## "k.zpale.com"
+## "m.zpale.com"
+## "mvg.zpale.com"
+## "kms.shuax.com"
+## "kensol263.imwork.net:1688"
+## "xykz.f3322.org"
+## "kms789.com"
+## "dimanyakms.sytes.net:1688"
+## "kms.03k.org:1688"
+
+# SLMGR Komutları
+
+## "slmgr.exe -ato                                    Activate Windows license and product key against Microsoft’s server."
+## "slmgr.exe -atp                                    Confirmation_ID Activate Windows with user-provided Confirmation   ID."
+## "slmgr.exe -ckms                                   Clear the name of KMS server used to default and port to default."
+## "slmgr.exe -cpky                                   Clear product key from the registry (prevents disclosure   attacks)."
+## "slmgr.exe -dli                                    Display the current license information with activation status and   partial product key."
+## "slmgr.exe -dlv                                    Verbose, similar to -dli but with more information."
+## "slmgr.exe -dti                                    Display Installation ID for offline activation."
+## "slmgr.exe -ipk                                    Key Enter a new product key supplied as   xxxxx-xxxxx-xxxxx-xxxxx-xxxxx."
+## "slmgr.exe -ilc                                    License_file Install license."
+## "slmgr.exe -rilc                                   Re-install system license files."
+## "slmgr.exe -rearm                                  Reset the evaluation period/licensing status and activation   state of the machine."
+## "slmgr.exe -skms activationservername:port         Set the Volume Licensing KMS server   and/or the port used for KMS activation (where supported by your   Windows edition)."
+## "slmgr.exe -skhc                                   Enable KMS host caching (default), this blocks the use of DNS   priority and weight after the initial discovery of a working KMS host."
+## "slmgr.exe -ckhc                                   Disable KMS host caching. This setting instructs the client to   use DNS auto-discovery each time it attempts KMS activation       "                   
+## "slmgr.exe -sai interval                           Sets the interval in minutes for unactivated clients to   attempt KMS connection. The activation interval must be between 15 - 30 days"
+## "slmgr.exe -sri interval                           Sets the renewal interval in minutes for activated   clients to attempt KMS connection. The renewal interval must be between"
+## "slmgr.exe -spri                                   Set the KMS priority to normal (default)"
+## "slmgr.exe -cpri                                   Set the KMS priority to low."
+## "slmgr.exe -sprt port                              Sets the port on which the KMS host listens for client   activation requests. The default TCP port is 1688."
+## "slmgr.exe -sdns                                   Enable DNS publishing by the KMS host (default).
+## "slmgr.exe -cdns                                   Disable DNS publishing by the KMS host.
+## "slmgr.exe -upk                                    Uninstall current installed product key and return license status   back to trial state."
+## "slmgr.exe -xpr                                    Show the expiry date of current license (if not permanently   activated).   Token-based activation:"
+## "slmgr.exe -lil                                    List the installed token-based activation issuance licenses. 
+## "slmgr.exe -ril ILID ILvID                         Remove an installed token-based activation issuance  license. 
+## "slmgr.exe -stao                                   Set the Token-based Activation Only flag, disabling automatic KMS  activation."
+## "slmgr.exe -ctao                                   Clear the Token-based Activation Only flag (default), enabling automatic KMS activation."
+## "slmgr.exe -ltc                                    List valid token-based activation certificates that can activate installed software"
+## "slmgr.exe -fta Certificate Thumbprint             Force token-based activation using the   identified certificate. "
+
+# RealTime Protection / Windows Defenders / Windows Otomatik Taramalarını Devre Dışı Bırak
+
+## Geçerli ayarları yazdır
+
+## "Get-MpPreference"
+
+## Tüm korumayı tek seferde devre dışı bırakmak için kopyalayıp yapıştırın
+
+## "Set-MpPreference -DisableArchiveScanning      $true     "           
+## "Set-MpPreference -DisableAutoExclusions       $true      "             
+## "Set-MpPreference -DisableBehaviorMonitoring   $true       "       
+## "Set-MpPreference -DisableBlockAtFirstSeen     $true        "             
+## "Set-MpPreference -DisableRealtimeMonitoring   $true"
+## "Set-MpPreference -DisableScanningNetworkFiles $true "                 
+## "Set-MpPreference -DisableScriptScanning       $true  "              
+## "Set-MpPreference -DisableArchiveScanning      $true"
+## "Set-MpPreference -ScanParameters              0"
+
+# WSL2'yi yükleyin ( Gentoo)
+
+## "Enable-WindowsOptionalFeature -NoRestart -Online -FeatureName Microsoft-Windows-Subsystem-Linux"
+## "Enable-WindowsOptionalFeature -NoRestart -Online -FeatureName VirtualMachinePlatform"
+## "wsl --set-default-version 2"
+## "wsl --import gentoo C:\Users\salfter\gentoo\ C:\Users\salfter\Downloads\stage3-amd64-nomultilib-20200624T214505Z.tar --version 2"
+
+# Kaynaklar
+
+## https://www.reneelab.com/win10-activation-crack-free.html
+## https://docs.microsoft.com/sv-se/windows-server/get-started/kmsclientkeys
+## https://gist.github.com/Minionguyjpro/d913b3931e844ad8ad9a758a4aca4b63
+
+# WEB SİTEMİZ: https://ceotubepremium.com/
